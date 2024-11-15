@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Website Activity Logger",
+  "version": "1.0",
+  "permissions": ["tabs", "activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "action": {
+    "default_popup": "options.html",
+    "default_title": "View Browsing Data"
+  }
+}
